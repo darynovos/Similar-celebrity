@@ -13,6 +13,7 @@
     - Kendall Jenner
     - Bella Hadid
     - Gigi Hadid
+    - Emma Stone
     path: ./dataset
   predict:
     file_path: ./photo
