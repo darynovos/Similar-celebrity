@@ -1,0 +1,23 @@
+- convert:
+    n_size: 256
+    new_path: ./processed_data
+  load_data:
+    limit_loads: 15
+    list_names:
+    - Dua Lipa
+    - Zendaya
+    - Angelina Jolie
+    - Sydney Sweeney
+    - Alexa Demie
+    - Emma Watson
+    - Kendall Jenner
+    - Bella Hadid
+    - Gigi Hadid
+    path: ./dataset
+  predict:
+    file_path: ./photo
+  train:
+    key_load: True
+    path_model: model.pkl
+    random_state: 100
+    test_size: 0.2
