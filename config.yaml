@@ -5,7 +5,6 @@
     limit_loads: 15
     list_names:
     - Dua Lipa
-    - Zendaya
     - Angelina Jolie
     - Sydney Sweeney
     - Alexa Demie
@@ -16,9 +15,10 @@
     - Emma Stone
     path: ./dataset
   predict:
-    file_path: ./photo
+    file_path: ./photo_daria.jpg
   train:
-    key_load: True
+    key_load: False
+    key_process: True
     path_model: model.pkl
     random_state: 100
     test_size: 0.2

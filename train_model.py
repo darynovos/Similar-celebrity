@@ -22,6 +22,7 @@ new_path = params['convert']['new_path']
 test_size = params['train']['test_size']
 random_state = params['train']['random_state']
 key_load = params['train']['key_load']
+key_process = params['train']['key_process']
 path_model = params['train']['path_model']
 
 logging.basicConfig(format = '%(levelname)s:%(message)s', level=logging.INFO)
@@ -77,8 +78,12 @@ if __name__ == "__main__":
         load_data.request_download(path, list_names, limit_loads)
         #convert images 
         load_data.convert_im(list_names, n_size, path)
-        
-        #get embandings
+    
+    if key_load == True:
+        key_process = True
+    
+    if key_process == True:
+        #get embendings
         prda = process_data.GetEmbedings(path, list_names, new_path)
         prda.upload_to()
 
