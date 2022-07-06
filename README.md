@@ -36,7 +36,7 @@ File with parameters needed for modules functioning.
 
 **train:**
 - key_load - if True launches the data downloading from Bing.com
-- key_process - if True process downloaded pictures and forms data for the model. Note, if key_load is True, key process is True y default.
+- key_process - if True process downloaded pictures and forms data for the model. Note, if key_load is True, key_process is True y default.
 - path_model - path to the file with the model
 - test_size - the size of test data 
 
@@ -56,9 +56,8 @@ File with parameters needed for modules functioning.
 # How to use
 
 1) Update config file
-
 - if you don't have available images, set key_load as True
 - if you want just process data (e.g. you manually added images) - set key_process as True
 2) start train_model.py
-3) start check_your_photo.py to check similar celebrity for your photo.
+3) start check_your_photo.py to check similar to your photo celebrity.
 
