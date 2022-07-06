@@ -1,6 +1,6 @@
 # Similar-celebrity
 
-Python framework that predicts celebrity similar to uploaded photo.
+Python framework that predicts celebrity similar to uploaded photo by face.
 
 # Requirements
 - `bing_image_downloader`
